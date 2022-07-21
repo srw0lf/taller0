@@ -24,3 +24,102 @@ body{
   h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
+/* barra de navegacion */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--negro2);
+  font-family: 'Marcellus', serif;
+  font-size: 1.3em;
+  padding: 1rem;
+}
+.item{
+    padding:  1rem;
+}
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+.logo img{
+  height: 3rem;
+}
+.boton{
+  background-color: var(--azuloscuro);
+  padding: 0.5rem 1rem;
+  color: var(--azuloscuro);
+  border-radius: 5px;
+  font-family: 'Marcellus', serif;
+  font-size: 1rem;
+}
+
+menu{
+  margin-right: 0.5rem;
+}
+/*texto centrar*/
+#parrafito{
+    display:flex;
+    text-align:justify;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-top: 5rem;
+    padding: 5rem;
+    
+}
+.img{
+    text-align: center;
+    flex-basis: 45%;
+}
+
+/* seccion freatur */
+
+#features{
+  background-image:url(../bg-features.png);
+  color: rgb(255, 255, 255);
+  padding-top: 1rem;
+}
+
+
+.features-description{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.features-title{
+  background-color: rgba(0,0,0,0.35);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5em;
+}
+
+.feature{
+  width: 25%;
+  min-width: 180px;
+  max-width: 230px;
+  margin: 0.8rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.feature-blue{
+  background-color: #00325eae;
+}
+
+.feature-black{
+  background-color: rgba(0,0,0,0.59);
+}
+
+.feature i{
+  font-size: 2.2em;
+  margin-bottom: 1.5rem;
+}
