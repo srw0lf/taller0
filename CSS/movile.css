@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+ 
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+ 
+  h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+/*mobile first*/
+nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    padding: 1rem;
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    background-color: var(--negro2);
+}
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.logo img{
+    width: 40%;
+    max-width: 180px;
+}
+.menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 10, 52, 0.838);
+    background-image: -webkit-radial-gradient();
+    display: none;
+}
+.menu hr{
+    width: 90%;
+    background-color: var(--blanco);
+}
+.item{
+    padding: 1rem;
+}
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+    font-size: 1.3rem;
+}
+nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
+}
+.navbar-button{
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+/*resolucion tablet*/
+@media screen and (min-width: 768px){
+}
+@media screen and (min-width: 1024px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--negro2);
+    }
+    .logo img{
+        width: 100%;
+    }
+    /*resolucion notebooks*/
+    @media screen and (min-width: 1308px) {
+        
+    }
+
+    .menu{
+        display: block;
+        background-color: var(--negro2);
+    }
+    .logo i{
+        display: none;
+    }
+    .menu hr{ /*ocultamos la barra de tarea*/
+        display: none;
+    }
+    }
+    .navbar-button{
+        background-color: var(--azuloscuro);
+    }
+    .logo img{
+        width: 100%;
+    }
+    .navbar-button{ 
+        background-color: var(--azuloscuro);
+    }
